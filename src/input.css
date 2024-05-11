@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      font-family: 'Jost';
+      scroll-behavior: smooth;
+    }
+
+    .hero-header {
+      background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url(/src/assets/hero-header.jpg)
+    }
+
+    .button {
+      padding: 17px 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      border: 0;
+      box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 15px;
+      transition: all 0.5s ease;
+    }
+    
+    .button:hover {
+      letter-spacing: 3px;
+      color: rgb(251 146 60);
+    }
+    
+    .button:active {
+      letter-spacing: 3px;
+      color: rgb(251 146 60);
+      transform: translateY(10px);
+      transition: 100ms;
+    }
+
+    .h1:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px rgb(251 146 60);  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+    }
+    .h1:hover:after { 
+      transform: scaleX(1); 
+    }
+    .h1.fromRight:after{ 
+      transform-origin:100% 50%; 
+    }
+    .h1.fromLeft:after{  
+      transform-origin:  0% 50%; 
+    }
+
+    .asd {
+      letter-spacing: 3px;
+    }
+
+    @media screen and (max-width: 255px) {
+      .imagen-h-mob {
+        display: none
+      }
+
+      .texto-h-mob {
+        margin-left: 50px;
+      }
+    }
+
+    .card {
+      display: flex;
+      height: 40px;
+      width: 180px;
+    }
+    
+    .card svg {
+      position: absolute;
+      display: flex;
+      width: 60%;
+      height: 100%;
+      font-size: 24px;
+      font-weight: 700;
+      opacity: 1;
+      transition: opacity 0.25s;
+      z-index: 2;
+      cursor: pointer;
+    }
+    
+    .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      color: whitesmoke;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.25s;
+      border-radius: 50px;
+    }
+    
+    .card svg {
+      transform: scale(1);
+    }
+    
+    .card .social-link1:hover {
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      animation: bounce_613 0.4s linear;
+    }
+    
+    .card .social-link2:hover {
+      background-color: #00ccff;
+      animation: bounce_613 0.4s linear;
+    }
+    
+    .card .social-link4:hover {
+      background-color: #12a50b;
+      animation: bounce_613 0.4s linear;
+    }
+    
+    @keyframes bounce_613 {
+      40% {
+        transform: scale(1.4);
+      }
+    
+      60% {
+        transform: scale(0.8);
+      }
+    
+      80% {
+        transform: scale(1.2);
+      }
+    
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .h3-carac {
+      letter-spacing: 1px
+    }
+
+    .caracteristicas {
+      justify-content: center
+    }
+
+    .imagen {
+      max-height: 450px;
+      max-width: 420px;
+      transition: scale .5s ease
+    }
+
+    .imagen:hover, .flacou:hover, .belcas:hover, .moises:hover, .cuadrao:hover {
+      scale: 108%
+    }
+    
+    .flacou {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/flacou.jpg);
+      transition: scale .5s ease
+    }
+
+    .belcas {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/maridobelcas.jpg);
+      transition: scale .5s ease
+
+    }
+
+    .moises {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/moises3.png);
+      transition: scale .5s ease
+
+    }
+
+    .cuadrao {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/cuadrao.jpg);
+      transition: scale .5s ease
+
+    }
+    
+    .cards-red {
+      top: 85%;
+    }
+
+    .button1 {
+      width: 10em;
+      position: relative;
+      height: 3.5em;
+      border: 3px ridge rgb(250 204 21);
+      outline: none;
+      background-color: transparent;
+      color: white;
+      transition: 1s;
+      border-radius: 0.3em;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .button1::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 3%;
+      width: 95%;
+      height: 40%;
+      background-color: #171313;
+      transition: 0.5s;
+      transform-origin: center;
+    }
+    
+    .button1::before {
+      content: "";
+      transform-origin: center;
+      position: absolute;
+      top: 80%;
+      left: 3%;
+      width: 95%;
+      height: 40%;
+      background-color: #171313;
+      transition: 0.5s;
+    }
+    
+    .button1:hover::before, .button1:hover::after {
+      transform: scale(0)
+    }
+    
+    .button1:hover {
+      box-shadow: inset 0px 0px 13px rgb(250 204 21);
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 400px;
+      height: 400px;
+      position: relative;
+      overflow: hidden; /* <===  */
+    }
+    
+    .slide {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      position: absolute;
+      transition: all 0.5s;
+    }
+    
+    .btn {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      z-index: 10px;
+      cursor: pointer;
+      color:white;
+      font-size: 22px;
+    }
+    .btn:active {
+      transform: scale(1.1);
+    }
+    .btn-prev {
+      top: 45%;
+      left: 2%;
+    }
+    
+    .btn-next {
+      top: 45%;
+      right: 2%;
+    }
+
+    #que-ofrecemos {
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(/src/assets/que-ofrecemos.jpg)
+
+    }
+  
+  };
+
+  @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+  @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+  @keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+  @keyframes slide-in-fwd-center{0%{transform:translateZ(-1400px);opacity:0}100%{transform:translateZ(0);opacity:1}}
+  @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+  
