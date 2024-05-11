@@ -13,7 +13,7 @@
     }
 
     .hero-header {
-      background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url(/src/assets/hero-header.jpg)
+      background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url(./assets/hero-header.jpg)
     }
 
     .button {
@@ -163,24 +163,24 @@
     }
     
     .flacou {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/flacou.jpg);
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(./assets/flacou.jpg);
       transition: scale .5s ease
     }
 
     .belcas {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/maridobelcas.jpg);
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(./assets/maridobelcas.jpg);
       transition: scale .5s ease
 
     }
 
     .moises {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/moises3.png);
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(./assets/moises3.png);
       transition: scale .5s ease
 
     }
 
     .cuadrao {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(/src/assets/cuadrao.jpg);
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.7)),url(./assets/cuadrao.jpg);
       transition: scale .5s ease
 
     }
@@ -278,7 +278,7 @@
     }
 
     #que-ofrecemos {
-      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(/src/assets/que-ofrecemos.jpg)
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./assets/que-ofrecemos.jpg)
 
     }
   
