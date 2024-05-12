@@ -453,6 +453,7 @@ video {
 html {
   font-family: 'Jost';
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .hero-header {
@@ -1090,6 +1091,10 @@ html {
   max-width: 80rem;
 }
 
+.max-w-80{
+  max-width: 20rem;
+}
+
 .max-w-96{
   max-width: 24rem;
 }
@@ -1589,10 +1594,6 @@ html {
 
   .sm\:w-550px{
     width: 550px;
-  }
-
-  .sm\:w-80{
-    width: 20rem;
   }
 
   .sm\:place-items-center{
