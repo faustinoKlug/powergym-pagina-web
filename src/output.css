@@ -453,7 +453,6 @@ video {
 html {
   font-family: 'Jost';
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 .hero-header {
@@ -1159,6 +1158,10 @@ html {
 
 .self-center{
   align-self: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .whitespace-nowrap{

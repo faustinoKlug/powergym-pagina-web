@@ -10,7 +10,6 @@
     html {
       font-family: 'Jost';
       scroll-behavior: smooth;
-      overflow: hidden;
     }
 
     .hero-header {
